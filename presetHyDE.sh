@@ -64,15 +64,14 @@ sudo systemctl enable bluetooth
 
 programasyay=(
     noto-fonts
-	  noto-fonts-emoji
-	  noto-fonts-cjk
+	noto-fonts-emoji
+	noto-fonts-cjk
     ttf-dejavu
-	  ttf-liberation
+	ttf-liberation
     ttf-jetbrains-mono
     ttf-jetbrains-mono-nerd
-	  ttf-nerd-fonts-symbols
+	ttf-nerd-fonts-symbols
     ttf-nerd-fonts-symbols-common
-    otf-symbols-nerd-font
     gnu-free-fonts
     ttf-joypixels
     apple-fonts
