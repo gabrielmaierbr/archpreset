@@ -4,6 +4,7 @@ sudo pacman -Syu --noconfirm
 programas=(
     git
     curl
+    cargo
     gcc
     wget
     perl
