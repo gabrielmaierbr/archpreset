@@ -104,7 +104,7 @@ do
 done
 
 fontes=(
-    dotfonts-git
+    ttf-google-fonts-git
     gnu-free-fonts
     otf-aurulent-nerd
     otf-cascadia-code
@@ -285,4 +285,3 @@ done
 
 git clone https://github.com/caelestia-dots/caelestia.git ~/.local/share/caelestia
 ~/.local/share/caelestia/install.fish
-reboot
