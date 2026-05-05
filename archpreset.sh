@@ -104,7 +104,11 @@ makepkg -si --noconfirm
 
 paru -S yay --noconfirm
 
-fontes=(
+sudo systemctl enable sddm
+sudo systemctl enable networkmanager
+sudo systemctl enable bluetooth
+
+programasyay=(
     ttf-google-fonts-git
     gnu-free-fonts
     otf-aurulent-nerd
@@ -256,19 +260,6 @@ fontes=(
     ttf-ubuntu-nerd
     ttf-victor-mono-nerd
     ttf-wps-fonts
-)
-
-for fonte in "${fontes[@]}"
-do
-    echo "Instalando $fonte..."
-    yay -S --noconfirm "$fonte"
-done
-
-sudo systemctl enable sddm
-sudo systemctl enable networkmanager
-sudo systemctl enable bluetooth
-
-programasyay=(
     bibata-cursor-theme-bin
     protonplus
     visual-studio-code-bin
