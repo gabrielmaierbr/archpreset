@@ -6,7 +6,7 @@ programas=(
     base-devel
     xdg-user-dirs
     sddm
-    hyprland
+    niri
 	pipewire
     pipewire-alsa
     pipewire-pulse
@@ -23,6 +23,16 @@ programas=(
     cava
 	networkmanager
 	iwd
+	noto-fonts
+	noto-fonts-emoji
+	noto-fonts-cjk
+    ttf-dejavu
+	ttf-liberation
+    ttf-jetbrains-mono
+    ttf-jetbrains-mono-nerd
+	ttf-nerd-fonts-symbols
+    ttf-nerd-fonts-symbols-common
+    gnu-free-fonts
 )
 
 for programa in "${programas[@]}"
@@ -63,19 +73,12 @@ sudo systemctl enable networkmanager
 sudo systemctl enable bluetooth
 
 programasyay=(
-    noto-fonts
-	noto-fonts-emoji
-	noto-fonts-cjk
-    ttf-dejavu
-	ttf-liberation
-    ttf-jetbrains-mono
-    ttf-jetbrains-mono-nerd
-	ttf-nerd-fonts-symbols
-    ttf-nerd-fonts-symbols-common
-    gnu-free-fonts
-    ttf-joypixels
+	cliphist
+	wlsunset
+	xdg-desktop-portal
+	python3
+	evolution-data-server
     apple-fonts
-    bibata-cursor-theme-bin
     protonplus
     visual-studio-code-bin
     spotify
@@ -90,6 +93,4 @@ do
     yay -S --noconfirm "$apps"
 done
 
-git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
-cd ~/HyDE/Scripts
-./install.sh
+paru -S noctalia-shell
