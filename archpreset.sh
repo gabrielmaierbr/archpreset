@@ -79,14 +79,6 @@ done
 
 xdg-user-dirs-update
 
-echo "Instalando Paru"
-cd ~/Downloads
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-
-paru -S yay --noconfirm
-
 driversAMD=(
     mesa
     mesa-utils
@@ -103,6 +95,14 @@ do
     echo "Instalando $driver..."
     sudo pacman -S --noconfirm --needed "$driver"
 done
+
+echo "Instalando Paru"
+cd ~/Downloads
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+
+paru -S yay --noconfirm
 
 fontes=(
     ttf-google-fonts-git
