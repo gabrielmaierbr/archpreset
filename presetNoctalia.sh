@@ -3,10 +3,18 @@ sudo pacman -Syu
 
 programas=(
     git
+	curl
     base-devel
+	perl
+	cmake
+	make
+	gcc
     xdg-user-dirs
+	xdg-desktop-portal
+	xdg-desktop-portal-gtk
     sddm
     niri
+	xwayland-satellite
 	pipewire
     pipewire-alsa
     pipewire-pulse
@@ -33,6 +41,7 @@ programas=(
 	ttf-nerd-fonts-symbols
     ttf-nerd-fonts-symbols-common
     gnu-free-fonts
+	power-profiles-daemon
 )
 
 for programa in "${programas[@]}"
@@ -73,6 +82,10 @@ sudo systemctl enable networkmanager
 sudo systemctl enable bluetooth
 
 programasyay=(
+	brightnessctl
+	matugen
+	ddcutil
+	qt6-multimedia-ffmpeg
 	cliphist
 	wlsunset
 	xdg-desktop-portal
@@ -85,6 +98,7 @@ programasyay=(
     brave-bin
     faugus-launcher
     heroic-games-launcher-bin
+	imagemagick
 )
 
 for apps in "${programasyay[@]}"
