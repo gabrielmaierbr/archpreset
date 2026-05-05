@@ -7,6 +7,22 @@ programas=(
     xdg-user-dirs
     sddm
     hyprland
+	pipewire
+    pipewire-alsa
+    pipewire-pulse
+    pipewire-jack
+    wireplumber
+	bluez
+    bluez-utils
+    blueman
+    ffmpeg
+    gstreamer
+	discord
+    steam
+    vlc
+    cava
+	networkmanager
+	iwd
 )
 
 for programa in "${programas[@]}"
