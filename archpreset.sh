@@ -100,7 +100,7 @@ echo "Instalando Paru"
 cd ~/Downloads
 git clone https://aur.archlinux.org/paru.git
 cd paru
-makepkg -si
+makepkg -si --noconfirm
 
 paru -S yay --noconfirm
 
