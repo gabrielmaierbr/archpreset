@@ -59,7 +59,7 @@ driversAMD=(
     lib32-mesa
     opencl-mesa
     vulkan-mesa-implicit-layers
-    linux-firmware
+    linux-firmware-radeon
     vulkan-tools
     amd-ucode
 )
