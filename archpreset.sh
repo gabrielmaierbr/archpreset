@@ -261,7 +261,7 @@ fontes=(
 for fonte in "${fontes[@]}"
 do
     echo "Instalando $fonte..."
-    yay -S --noconfirm --needed "$fonte"
+    yay -S --noconfirm "$fonte"
 done
 
 sudo systemctl enable sddm
