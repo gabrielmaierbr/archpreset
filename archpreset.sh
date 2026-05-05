@@ -160,7 +160,7 @@ fontes=(
     otf-overpass-nerd
     ttf-indic-otf
     ttf-indic-otf
-    ttf-0xproto-nerd 3.3.0-1
+    ttf-0xproto-nerd
     ttf-3270-nerd
     ttf-agave-nerd
     ttf-anonymous-pro
