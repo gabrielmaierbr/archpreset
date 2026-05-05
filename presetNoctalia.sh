@@ -42,6 +42,7 @@ programas=(
     ttf-nerd-fonts-symbols-common
     gnu-free-fonts
 	power-profiles-daemon
+	polkit-gnome
 )
 
 for programa in "${programas[@]}"
