@@ -11,7 +11,6 @@ programas=(
 	gcc
     xdg-user-dirs
 	xdg-desktop-portal
-	xdg-desktop-portal-gtk
     sddm
     niri
 	xwayland-satellite
