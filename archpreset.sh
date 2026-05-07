@@ -10,6 +10,7 @@ programas=(
     perl
     make
     cmake
+	ninja
     python
     playerctl
     pipewire
@@ -42,11 +43,30 @@ programas=(
     base-devel
     power-profiles-daemon
     xdg-user-dirs
+	xdg-utils
     discord
     steam
     vlc
     cava
-    networkmanager
+    ddcutil
+	brightnessctl
+	app2unit
+	libcava
+	networkmanager
+	lm-sensors
+	fish
+	aubio
+	libpipewire
+	glibc
+	qt6-declarative
+	gcc-libs
+	material-symbols
+	caskaydia-cove-nerd
+	swappy
+	libqalculate
+	bash
+	qt6-base
+	qt6-declarative
     plymouth
     iwd
     dosfstools
@@ -56,6 +76,10 @@ programas=(
 	java-runtime-common
 	gamemode
 	lib32-gamemode
+	wine
+	wine-mono
+	winetricks
+	wine-staging
 )
 
 for programa in "${programas[@]}"
@@ -118,6 +142,7 @@ programasparu=(
     apple-fonts
     bibata-cursor-theme-bin
     protonplus
+	protontricks
     visual-studio-code-bin
     spotify
     brave-bin
