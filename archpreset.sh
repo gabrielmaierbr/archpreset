@@ -29,7 +29,6 @@ programas=(
     gst-plugins-good
     libdvdcss
     nano
-    kitty
     fish
     sddm
     hyprland
