@@ -33,6 +33,8 @@ programas=(
     fish
     sddm
     hyprland
+	plasma
+	plasma-desktop
     thunar
     7zip
     file-roller
@@ -80,6 +82,9 @@ programas=(
 	wine-mono
 	winetricks
 	wine-staging
+	qt6-svg
+	qt6-virtualkeyboard
+	qt6-multimedia-ffmpeg
 )
 
 for programa in "${programas[@]}"
@@ -148,6 +153,7 @@ programasparu=(
     brave-bin
     faugus-launcher
     heroic-games-launcher-bin
+	sddm-silent-theme
 )
 
 for apps in "${programasparu[@]}"
