@@ -37,6 +37,7 @@ programas=(
     file-roller
     gvfs
     xdg-desktop-portal
+xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     polkit-gnome
     base-devel
@@ -53,7 +54,6 @@ programas=(
 	libcava
 	networkmanager
 	lm-sensors
-	fish
 	aubio
 	libpipewire
 	glibc
@@ -71,7 +71,6 @@ programas=(
     dosfstools
     mtools
     fastfetch
-    loupe
 	java-runtime-common
 	gamemode
 	lib32-gamemode
