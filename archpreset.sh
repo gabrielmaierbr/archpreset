@@ -128,8 +128,6 @@ makepkg -si --noconfirm
 paru -S yay --noconfirm
 
 sudo systemctl enable sddm
-sudo systemctl enable networkmanager
-sudo systemctl enable bluetooth
 
 programasparu=(
     noto-fonts
@@ -145,7 +143,6 @@ programasparu=(
 	ttf-ms-win10-auto
 	ttf-vista-fonts
     apple-fonts
-    bibata-cursor-theme-bin
     protonplus
 	protontricks
     visual-studio-code-bin
