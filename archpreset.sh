@@ -33,8 +33,6 @@ programas=(
     fish
     sddm
     hyprland
-	plasma
-	plasma-desktop
     thunar
     7zip
     file-roller
@@ -128,6 +126,7 @@ makepkg -si --noconfirm
 paru -S yay --noconfirm
 
 sudo systemctl enable sddm
+sudo systemctl enable bluetooth
 
 programasparu=(
     noto-fonts
@@ -139,8 +138,6 @@ programasparu=(
     ttf-jetbrains-mono-nerd
 	ttf-nerd-fonts-symbols
     ttf-nerd-fonts-symbols-common
-    ttf-ms-win11-auto
-	ttf-ms-win10-auto
 	ttf-vista-fonts
     apple-fonts
     protonplus
