@@ -26,8 +26,6 @@ programas=(
     gst-libav
     gst-plugins-base
     gst-plugins-good
-    gst-plugins-bad
-    gst-plugins-ugly
     libdvdcss
     nano
     kitty
@@ -38,24 +36,10 @@ programas=(
     7zip
     file-roller
     gvfs
-    gvfs-mtp
-    gvfs-smb
-    udisks2
-    polkit
     xdg-desktop-portal
-    xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
-    nwg-look
-    qt5ct
-    qt6ct
-    kvantum
-    kvantum-qt5
-    qt5-wayland
-    qt6-wayland
-    gnome-keyring
     polkit-gnome
     base-devel
-    trash-cli
     power-profiles-daemon
     xdg-user-dirs
     discord
@@ -69,6 +53,9 @@ programas=(
     mtools
     fastfetch
     loupe
+	java-runtime-common
+	gamemode
+	lib32-gamemode
 )
 
 for programa in "${programas[@]}"
@@ -78,6 +65,7 @@ do
 done
 
 xdg-user-dirs-update
+sudo gpasswd --add $USER gamemode
 
 driversAMD=(
     mesa
@@ -85,8 +73,14 @@ driversAMD=(
     lib32-mesa
     opencl-mesa
     vulkan-mesa-implicit-layers
-    linux-firmware
-    vulkan-tools
+    linux-firmware-radeon
+    vulkan-icd-loader
+	lib32-vulkan-icd-loader
+	vulkan-radeon
+	lib32-vulkan-radeon
+	vulkan-headers
+	vulkan-tools
+	xf86-video-amdgpu
     amd-ucode
 )
 
@@ -108,7 +102,7 @@ sudo systemctl enable sddm
 sudo systemctl enable networkmanager
 sudo systemctl enable bluetooth
 
-programasyay=(
+programasparu=(
     noto-fonts
 	noto-fonts-emoji
 	noto-fonts-cjk
@@ -118,9 +112,9 @@ programasyay=(
     ttf-jetbrains-mono-nerd
 	ttf-nerd-fonts-symbols
     ttf-nerd-fonts-symbols-common
-    otf-symbols-nerd-font
-    gnu-free-fonts
-    ttf-joypixels
+    ttf-ms-win11-auto
+	ttf-ms-win10-auto
+	ttf-vista-fonts
     apple-fonts
     bibata-cursor-theme-bin
     protonplus
@@ -131,10 +125,10 @@ programasyay=(
     heroic-games-launcher-bin
 )
 
-for apps in "${programasyay[@]}"
+for apps in "${programasparu[@]}"
 do
     echo "Instalando $apps..."
-    yay -S --noconfirm "$apps"
+    paru -S --noconfirm "$apps"
 done
 
 git clone https://github.com/caelestia-dots/caelestia.git ~/.local/share/caelestia
