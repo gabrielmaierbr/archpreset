@@ -59,7 +59,6 @@ xdg-desktop-portal-gtk
 	glibc
 	qt6-declarative
 	gcc-libs
-	material-symbols
 	caskaydia-cove-nerd
 	swappy
 	libqalculate
