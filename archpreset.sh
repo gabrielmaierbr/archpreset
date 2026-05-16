@@ -17,11 +17,9 @@ programas=(
 	kitty
     sddm
     hyprland
-    thunar
     7zip
 	unzip
 	zip
-    file-roller
     gvfs
     xdg-desktop-portal
 	xdg-desktop-portal-gtk
@@ -84,7 +82,6 @@ makepkg -si --noconfirm
 paru -S yay --noconfirm
 
 sudo systemctl enable sddm
-sudo systemctl enable bluetooth
 
 programasparu=(
     noto-fonts
@@ -112,7 +109,5 @@ do
     echo "Instalando $apps..."
     paru -S --noconfirm "$apps"
 done
-
-sudo systemctl enable sddm
 
 bash <(curl -s https://ii.clsty.link/get)
