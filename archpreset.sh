@@ -4,7 +4,6 @@ sudo pacman -Syu --noconfirm
 programas=(
     git
     curl
-    cargo
     gcc
     wget
     perl
@@ -12,32 +11,20 @@ programas=(
     cmake
 	ninja
     python
-    playerctl
-    pipewire
-    pipewire-alsa
-    pipewire-pulse
-    pipewire-jack
-    wireplumber
-    pavucontrol
-    bluez
-    bluez-utils
-    blueman
     ffmpeg
-    gstreamer
-    gst-libav
-    gst-plugins-base
-    gst-plugins-good
-    libdvdcss
     nano
     fish
+	kitty
     sddm
     hyprland
     thunar
     7zip
+	unzip
+	zip
     file-roller
     gvfs
     xdg-desktop-portal
-xdg-desktop-portal-gtk
+	xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     polkit-gnome
     base-devel
@@ -47,39 +34,14 @@ xdg-desktop-portal-gtk
     discord
     steam
     vlc
-    cava
-    ddcutil
-	brightnessctl
-	app2unit
-	libcava
-	networkmanager
-	lm-sensors
-	aubio
-	libpipewire
-	glibc
-	qt6-declarative
-	gcc-libs
-	caskaydia-cove-nerd
-	swappy
-	libqalculate
-	bash
-	qt6-base
-	qt6-declarative
-    plymouth
-    iwd
-    dosfstools
-    mtools
-    fastfetch
 	java-runtime-common
 	gamemode
 	lib32-gamemode
+	gamescope
+	mangohud
 	wine
 	wine-mono
 	winetricks
-	wine-staging
-	qt6-svg
-	qt6-virtualkeyboard
-	qt6-multimedia-ffmpeg
 )
 
 for programa in "${programas[@]}"
@@ -97,7 +59,6 @@ driversAMD=(
     lib32-mesa
     opencl-mesa
     vulkan-mesa-implicit-layers
-    linux-firmware-radeon
     vulkan-icd-loader
 	lib32-vulkan-icd-loader
 	vulkan-radeon
@@ -135,11 +96,10 @@ programasparu=(
     ttf-jetbrains-mono-nerd
 	ttf-nerd-fonts-symbols
     ttf-nerd-fonts-symbols-common
-	ttf-vista-fonts
     apple-fonts
     protonplus
 	protontricks
-    visual-studio-code-bin
+    vscode
     spotify
     brave-bin
     faugus-launcher
@@ -153,5 +113,6 @@ do
     paru -S --noconfirm "$apps"
 done
 
-git clone https://github.com/caelestia-dots/caelestia.git ~/.local/share/caelestia
-~/.local/share/caelestia/install.fish --noconfirm
+sudo systemctl enable sddm
+
+bash <(curl -s https://ii.clsty.link/get)
