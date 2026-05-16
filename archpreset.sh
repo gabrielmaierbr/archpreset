@@ -40,6 +40,8 @@ programas=(
 	wine
 	wine-mono
 	winetricks
+	libreoffice-fresh
+	flatpak
 )
 
 for programa in "${programas[@]}"
