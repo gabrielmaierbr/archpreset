@@ -40,7 +40,7 @@ programas=(
 	wine
 	wine-mono
 	winetricks
-	libreoffice-fresh
+	libreoffice-still
 	flatpak
 )
 
