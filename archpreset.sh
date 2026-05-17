@@ -104,6 +104,13 @@ programasparu=(
     faugus-launcher
     heroic-games-launcher-bin
 	sddm-silent-theme
+	ddcutil
+	cliphist
+	wlsunset
+	evolution-data-server
+	imagemagick
+	brightnessctl
+	noctalia-shell
 )
 
 for apps in "${programasparu[@]}"
@@ -112,4 +119,4 @@ do
     paru -S --noconfirm "$apps"
 done
 
-bash <(curl -s https://ii.clsty.link/get)
+
