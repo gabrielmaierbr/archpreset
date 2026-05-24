@@ -13,7 +13,7 @@ programas=(
     python
     ffmpeg
     nano
-    fish
+	nautilus
 	kitty
     sddm
     hyprland
@@ -24,7 +24,6 @@ programas=(
     xdg-desktop-portal
 	xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
-    polkit-gnome
     base-devel
     power-profiles-daemon
     xdg-user-dirs
