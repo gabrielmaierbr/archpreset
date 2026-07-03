@@ -13,7 +13,7 @@ programas=(
     python
     ffmpeg
     nano
-	nautilus
+	thunar
 	kitty
     sddm
     hyprland
@@ -29,6 +29,7 @@ programas=(
     xdg-user-dirs
 	xdg-utils
     discord
+	spotify-launcher
     steam
     vlc
 	java-runtime-common
@@ -41,6 +42,7 @@ programas=(
 	winetricks
 	libreoffice-still
 	flatpak
+	code
 )
 
 for programa in "${programas[@]}"
@@ -80,8 +82,6 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si --noconfirm
 
-paru -S yay --noconfirm
-
 sudo systemctl enable sddm
 
 programasparu=(
@@ -97,8 +97,6 @@ programasparu=(
     apple-fonts
     protonplus
 	protontricks
-    vscode
-    spotify
     brave-bin
     faugus-launcher
     heroic-games-launcher-bin
@@ -110,6 +108,7 @@ programasparu=(
 	imagemagick
 	brightnessctl
 	noctalia-shell
+	brave-origin-bin
 )
 
 for apps in "${programasparu[@]}"
